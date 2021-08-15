@@ -1,4 +1,6 @@
+//Dart
 import 'package:flutter/material.dart';
+import 'package:flutter_catalog/home_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -6,14 +8,11 @@ void main() {
 
 class MyApp extends StatelessWidget {
   //keyword= stl
-  const MyApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
+    //constaint not changed
     return MaterialApp(
-        home: Material(
-            child: Center(
-      child: Text("Welcome Aaditya to learn Flutter"),
-    )));
+      home: Homepage(),
+    );
   }
 }
